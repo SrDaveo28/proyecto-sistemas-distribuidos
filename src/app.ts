@@ -14,7 +14,7 @@ app.use(morgan('dev'))
 app.use(express.json())
 
 // routes
-app.use('/api', indexRoutes)
+app.use('/', indexRoutes)
 
 // this folder is for store files
 app.use('/uploads', express.static(path.resolve('uploads')))
